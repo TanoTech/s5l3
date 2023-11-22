@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    color: rgb(100, 1, 1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2svh 4svw;
+    line-height: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 95svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 245, 219);
+    padding: 3svh 0;
+    border-radius: 25%;
+    margin-bottom: 4svh;
+}
+
+nav img {
+    width: 2.5rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    vertical-align: bottom;
+}
+
+#shopLink {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#shopLink button {
+    font-size: 1.5rem;
+    margin-top: 1svh;
+    padding: 3.5svh 23svw;
+    border-radius: 50px;
+}
+
+nav button,
+main div button {
+    background-color: rgb(255, 217, 108);
+    border: none;
+    font-size: 1rem;
+    color: rgb(100, 1, 1);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+main div button {
+    width: 0 6rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4svh;
+    line-height: 4svh;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+nav button {
+    margin-bottom: 2svh;
+}
+
+#btn1,
+#btn2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#btn1 button,
+#btn2 button {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 8rem;
+    height: auto;
+}
+
+main img {
+    width: 95svw;
+}
+
+main div {
+    border-radius: 15%;
+    background-color: rgb(254, 245, 219);
+    overflow: hidden;
+    margin-bottom: 2svh;
+}
+
+#testo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#prezzo {
+    margin-top: 0.6rem;
+}
+
+#testo div p:nth-child(2) {
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+main div button {
+    display: block;
+    margin: auto;
+    margin-bottom: 2svh;
+    width: 11rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(254, 245, 219);
+    border-radius: 5%;
+    width: 95vw;
+}
+
+article p,
+article img,
+article h3 {
+    margin: 0 1.6rem;
+    margin-top: 1.2rem;
+}
+
+article img {
+    max-width: 100%;
+}
+
+/* Stili per schermi larghi (min-width: 700px) */
+@media screen and (min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2svh 4svw;
+    }
+
+    h1 {
+        margin-top: 12rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main div img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    main div {
+        width: 45%;
+        margin-bottom: 2svh;
+    }
+
+    #testo {
+        display: flex;
+        width: 100%;
+    }
+    #testo div p:nth-child(2) {
+        font-size: 0.8rem;
+        margin-left: 0.4rem;
+    }
+
+    main div button {
+        display: block;
+        margin: auto;
+        margin-bottom: 2svh;
+        width: 11rem;
+    }
+
+    #schedaProdotto {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 100vw;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    #shopLink {
+        order: 2;
+    }
+
+    #btn1,
+    #btn2 {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #btn1 {
+        order: 1;
+        flex-shrink: 1;
+    }
+
+    #btn2 {
+        order: 3;
+        flex-shrink: 1;
+    }
+
+    #shopLink button {
+        padding: 3.5vh 2vw;
+        order: 2;
+        flex-shrink: 0;
+    }
+
+}
+
+@media screen and (min-width:899px) {
+    body {
+        max-width: 899px;
+    }
+
+    nav {
+        position: fixed;
+        width: 25vw;
+        left: 0;
+        flex-direction: column;
+        max-width: 29vw;
+        padding-bottom: 15rem;
+    }
+
+    main div {
+        width: 20vw;
+        margin-bottom: 2svh;
+        justify-content: space-evenly;
+        margin-right: 0.1rem;
+        margin-left: 1rem;
+    }
+
+    #schedaProdotto2 {
+        display: none;
+    }
+
+    #shopLink {
+        order: 1;
+        margin-top: 3rem;
+    }
+
+    #btn1,
+    #btn2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #shopLink button {
+        padding: 4.5vh 6vw;
+        order: 2;
+        max-width: 100%;
+    }
+
+    #btn1 button,
+    #btn2 button {
+        padding: 4.5vh 11vw; 
+        margin: 1vh 0; 
+        font-size: 1.5rem;
+        white-space: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 10vw;
+    }
+
+
+    main {
+        margin-left: 15rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 3rem;
+        margin-left: 11rem;
+    }
+
+    article {
+        width: 69%;
+        margin-left: 15.5rem;
+    }
+
+}
+
+@media screen and (min-width:994px) {
+    #schedaProdotto2 {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    main {
+        flex-wrap: nowrap;
+    }
+
+    main div {
+    
+    }
+
+    
+}
